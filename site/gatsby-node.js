@@ -47,3 +47,17 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     });
   };
 };
+
+exports.createResolvers = ({ createResolvers }) => {
+  const resolvers = {
+    Book: {
+      buyLink: {
+        type: 'String',
+        resolve: (source) =>
+          `https://www.powells.com/searchresults?keyword=${source.isbn}`,
+      },
+    },
+  };
+
+  createResolvers(resolvers);
+};
