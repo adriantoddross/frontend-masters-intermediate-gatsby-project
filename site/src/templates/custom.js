@@ -1,6 +1,6 @@
-import * as React from "react"; // React doesn't require global import anymore but Gatsby hasn' updated yet.
+import * as React from 'react';
 
-export default function Custom({ pageContext }) {
+export default function CustomPage({ pageContext }) {
   return (
     <div>
       <h1>{pageContext.title}</h1>
