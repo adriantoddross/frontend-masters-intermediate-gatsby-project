@@ -7,8 +7,12 @@ module.exports = {
         path: '/books',
       },
       {
-        label: 'Authos',
+        label: 'Authors',
         path: '/authors',
+      },
+      {
+        label: 'Account',
+        path: '/account',
       },
     ],
   },
@@ -17,5 +21,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-theme-shared-nav',
+    'gatsby-plugin-netlify',
   ],
 };
